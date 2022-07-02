@@ -1,0 +1,22 @@
+ja:
+    activerecord:
+      models:
+        user: 'ユーザー'
+        negotiation: '商談'
+      attributes:
+        user:
+          email: 'メールアドレス'
+          password: 'パスワード'
+          password_confirmation: 'パスワード確認'
+          name: '名前'
+        negotiation:
+          name: '商談名'
+          client_name: '取引先名'
+          amount: '金額'
+          completion_date: '完了予定日'
+          note: '備考'
+          rate: '確度'
+          phase: 'フェーズ'
+          created_at: '作成日'
+          updated_at: '更新日'
+      

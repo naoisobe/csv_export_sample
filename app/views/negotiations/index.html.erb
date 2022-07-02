@@ -1,0 +1,48 @@
+<div class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">CSV出力サンプル</h1>
+      <p>
+        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.name" %></th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.client_name" %></th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.amount" %></th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.completion_date" %></th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.note" %></th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.rate" %></th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.phase" %></th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.created_at" %></th>
+          <th><%= I18n.t "activerecord.attributes.negotiation.updated_at" %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @negotiations.each do |negotication| %>
+          <tr>
+            <td><%= negotiation.id %></td>
+            <td><%= negotiation.name %></td>
+            <td><%= negotiation.client_name %></td>
+            <td><%= negotiation.amount %></td>
+            <td><%= negotiation.completion_date %></td>
+            <td><%= negotiation.note %></td>
+            <td><%= negotiation.rate %></td>
+            <td><%= negotiation.phase %></td>
+            <td><%= negotiation.created_at %></td>
+            <td><%= negotiation.updated_at %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
